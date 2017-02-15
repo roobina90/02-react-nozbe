@@ -85,6 +85,10 @@ footer {
     margin: 0;
 }
 
+.active {
+    color: red;
+}
+
 .completed {
     opacity: .5;
 }
