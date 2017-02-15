@@ -7,15 +7,17 @@ export default React.createClass({
   },
   render () {
     return (
-      <div>
-        <div>
+      <div className='mainApp'>
+        <div className='navbar'>
           <nav>
             <NavLink onlyActiveOnIndex to='/'>Main</NavLink>
             <NavLink to='/tasks'>Tasks</NavLink>
             <NavLink to='/calendar'>Calendar</NavLink>
           </nav>
         </div>
-        {this.props.children}
+        <div className='tasksList'>
+          {this.props.children}
+        </div>
       </div>
     )
   }
